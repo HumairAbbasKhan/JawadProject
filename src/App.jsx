@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Users from "./pages/Users";
 import Personalisation from "./pages/Personalisation";
-import Home from "./pages/Home"; // Create a Home component as the default page
 
 const App = () => {
   return (
@@ -14,7 +13,6 @@ const App = () => {
         <div className="flex-1">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/users" element={<Users />} />
             <Route path="/personalisation" element={<Personalisation />} />
           </Routes>
